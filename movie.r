@@ -3,7 +3,7 @@
 library(tm)
 
 # Set the path to your desktop folder. scripts is where you'll put your text files. Create a new folder within scripts for each movie, named after movie with no spaces.  Replace "nameofmoviefolder" below with name of folder.   
-cname <- file.path("~","Desktop","movie-swear", "scripts")  
+cname <- file.path("~","Desktop","movie-swear", "scripts", "wolf")  
 
 # Build the "corpus" of the one script. This step is required by the text mining package.    
 docs <- VCorpus(DirSource(cname))   
@@ -49,4 +49,3 @@ m <- t(m)
 
 # Write out to csv. change the name. 
 write.csv(m, file="wolf.csv")   
-
